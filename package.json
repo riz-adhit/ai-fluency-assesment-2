@@ -1,0 +1,18 @@
+{
+  "name": "qa-tasks-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright template for the Library Checkout & Return System QA task",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "codegen": "playwright codegen ${PLAYWRIGHT_BASE_URL:-https://library-management.mekari.io/}",
+    "install:browsers": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "25.5.0",
+    "typescript": "5.9.3"
+  }
+}
